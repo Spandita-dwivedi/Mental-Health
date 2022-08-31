@@ -1,0 +1,16 @@
+#blogs{
+    margin-left: 100px !important;
+    margin-right: 100px !important;
+    margin-top: 100px;
+}
+
+.hover01 figure img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .1s ease-in-out;
+	transition: .1s ease-in-out;
+}
+.hover01 figure:hover img {
+	-webkit-transform: scale(1.08);
+	transform: scale(1.08);
+}

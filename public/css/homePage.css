@@ -1,0 +1,563 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Cormorant:wght@300&family=Sacramento&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F3EDE1  !important;
+    overflow-x: hidden;
+
+}
+
+
+
+/* _________________NAVBAR_________________ */
+
+
+.navbar-brand {
+    padding-left: 3%;
+
+    font-family: 'Cinzel', serif;
+    font-size: 2rem !important;
+
+}
+
+.dropdown-menu>.active>a,
+.dropdown-menu>.active>a:hover.dropdown-menu>.active>a:focus {
+    color: black !important;
+    background-color: #e7e7e7 !important;
+    border-color: gray !important;
+    outline: none !important;
+    cursor: pointer;
+}
+
+.dropdown-item {
+    outline: none;
+    border-color: gray;
+
+}
+
+.nav-item {
+    font-style: bold;
+    font-family: 'Cinzel', serif;
+    font-size: 1.1rem;
+}
+
+.navbar-nav>li {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+/* _________________CAROUSEL____________________ */
+
+
+
+/* .carousel {
+    margin-bottom: 4rem;
+}
+
+.carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+}
+
+
+.carousel-item {
+    height: 32rem;
+    background-color: #777;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Cinzel', serif;
+}
+
+.carousel-item>img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 32rem;
+    display:block;
+    width:100%;
+    
+} */
+
+.carousel-inner {
+    margin: auto;
+
+
+}
+
+#myCarousel .carousel-item img {
+    object-fit: cover;
+    object-position: center;
+    height: 100vh;
+    width: 400px;
+    overflow: hidden;
+}
+
+.carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+    color: black;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+    height: 32rem;
+}
+
+.carousel-item>img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 32rem;
+}
+
+.container{
+    border-style: solid;
+    border-color: black;
+    
+  }
+  .car{
+    font-family: 'Cinzel', serif;
+    color: #1E1E1E;
+    
+    font-weight:500;
+  }
+  .cars{
+    font-family: 'Cormorant', serif;
+    color: #1E1E1E;
+    font-weight: bold;
+  }
+
+
+
+
+
+/* ____________RATING______________ */
+
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.rating>input {
+    display: none;
+}
+
+.rating>label {
+    position: relative;
+    width: 1em;
+    font-size: 3vw;
+    color: #1E1E1E;
+    cursor: pointer;
+}
+
+.rating>label::before {
+    content: "\2605";
+    position: absolute;
+    opacity: 0;
+    color: white;
+}
+
+.rating>label:hover:before,
+.rating>label:hover~label:before {
+    opacity: 1 !important;
+}
+
+.rating>input:checked~label:before {
+    opacity: 1;
+}
+
+.rating:hover>input:checked~label:before {
+    opacity: 0.4;
+}
+
+
+h1,
+p {
+    text-align: center;
+
+}
+
+h1 {
+    margin-top: 100px;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 14px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+}
+
+.h{
+    font-family: 'Cinzel', serif;
+    font-size: 1.5rem;
+    color:white;
+}
+
+.top{
+    margin-top: 70px;
+}
+
+.wht{
+    background-color: #F3EDE1;
+    
+    
+}
+
+.mood{
+    background-color: #1E1E1E;
+}
+
+
+.top{
+    margin-top: 0;
+    border-color: #e7e7e7;
+}
+/* _______________CARDS________________ */
+
+/* #cards {
+    background-color: black;
+    padding-top: 100px;
+}
+
+.card-img-top {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+
+.card-img-top:hover {
+    filter: none;
+    -webkit-filter: grayscale(0);
+}
+
+.card-body {
+    background-color: black;
+}
+
+.btn {
+    box-shadow: 0 0 0.4rem 0 white;
+
+
+}
+
+.card-img-top1 {
+    height: 400px;
+
+    display: inline-block;
+}
+
+.card-title{
+    font-family: 'Cinzel', serif;
+    color:white;
+}
+
+.card-text{
+    font-family: 'Cormorant', serif;
+    color:white;
+}
+
+/* ____________________________LEAVE A NOTE_____________________________ */
+/* .myNote {
+    text-align: center;
+    margin-top: 60px;
+}
+
+#note {
+    box-shadow: 0 0 0.4rem 0 white;
+    background-color: black;
+}
+
+.l {
+    margin-top: 40px;
+    font-family: 'Cormorant', serif;
+    font-size: 1.7rem;
+    color:white;
+}
+
+.Button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.w{
+    font-family: 'Cinzel', serif;
+    white-space: normal;
+    color:white;
+}
+
+.grateful{
+    margin-top: 70px;
+}
+
+input, select, textarea{
+    color: white;
+} */
+
+/* _________________TALK TO A PROFESSIONAL________________ */
+
+/* .professional {
+    width: fit-content;
+    margin: auto;
+    padding: 70px;
+    box-shadow: 0 0 0.4rem 0 white;
+    font-size: 1.2rem;
+    margin-top: 35px;
+}
+
+.support {
+    margin: auto;
+    width: 500px;
+    margin-top: 70px;
+}
+
+.mental {
+    text-align: center;
+    white-space: normal;
+    font-family: 'Cinzel', serif;
+    line-height: 3.5rem;
+    color:white;
+
+}
+
+.talks {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-family: 'Cormorant', serif;
+    font-size:1.5rem;
+    color:white;
+}
+
+.talk {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-family: 'Cormorant', serif;
+    font-size: 1.5rem;
+    color:white;
+} */
+
+/* ________________MID CONTAINER________________ */
+.mid{
+    border-color: #e7e7e7;
+    margin-top: 80px;
+}
+.photu{
+    background-color: #F3EDE1;
+}
+
+
+/* ____________________MID TWO_______________________ */
+
+
+.mid_2{
+    background-color: #F3EDE1;
+}
+
+.get{
+    font-family: 'Cinzel', serif;
+    font-weight: lighter;
+}
+.phy{
+    width: 350px;
+    margin: auto;
+    font-family: 'Cormorant', serif;
+}
+
+.btnss{
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+/*______________________CARDS____________________________*/
+.cardss{
+    margin:150px 105px 0 105px !important;
+}
+
+.card-title{
+    font-family: 'Cinzel', serif;
+    color: #F3EDE1;
+}
+
+.card-text{
+    font-family: 'Cormorant', serif;
+    color: #F3EDE1;
+    text-align: left;
+}
+
+.card-body{
+    background-color: #1E1E1E;
+}
+
+
+.hover07 figure img {
+	-webkit-filter: blur(3px);
+	filter: blur(3px);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hover07 figure:hover img {
+	-webkit-filter: blur(0);
+	filter: blur(0);
+}
+
+/*___________________INTRO______________________*/
+
+.intro{
+    border-color: #F3EDE1;
+
+    margin-top: 100px;
+}
+
+.intro_text{
+    margin:auto !important;
+    
+}
+
+.about_span{
+    text-align: right;
+    margin-top: 35px;
+    font-family: 'Cormorant', serif;
+    
+}
+
+.Spandita{
+    text-align: right;
+    font-family: 'Sacramento', cursive;
+}
+
+/*_______________________GRATEFUL______________________*/
+
+.gratefull{
+    border: #F3EDE1;
+    background-color: #1E1E1E;
+    margin-top: 80px;
+  
+
+    
+}
+
+  .myNote {
+    text-align: center;
+    margin-top: 5vw;
+
+} 
+
+.note {
+    box-shadow: 0 0 0.4rem 0 white;
+    background-color: #1E1E1E !important;
+    
+} 
+
+.l {
+    margin-top: 20px;
+    font-family: 'Cormorant', serif;
+    font-size: 1.5vw;
+    color:white;
+}
+
+.Button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.w{
+    font-family: 'Cinzel', serif;
+    white-space: normal;
+    color:white;
+    font-size: 2vw;
+}
+
+.grateful{
+    margin-top: 50px;
+    margin-right: 50px;
+    background-color: #1E1E1E;
+}
+
+input, select, textarea{
+    color: white;
+} 
+
+.rose_2{
+    width:500px !important;
+    
+}
+
+.roww{
+  height:500px;
+}
+
+.graph{
+    height:30vw;
+}
+
+.here{
+    margin-top: 8vw;
+}
+
+
+
+
+.Help{
+    margin: auto !important;
+    padding:80px 80px 0 80px;
+   background-color: #F3EDE1 !important;
+    
+}
+
+.help{
+    background-color: #F3EDE1;
+    
+}
+
+.bottom{
+    background-color: #F3EDE1;
+    margin:90px 105px 0 105px !important;
+}
+
+.a{
+    margin-top: 30vw !important;
+}
+
+.mental{
+    font-size: 2vw;
+    color: #1E1E1E;
+}
+
+.box{
+    margin-top: 3vw;
+}
+
+.talk{
+    margin-bottom: 10px;
+}
+
+.talks{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.footer {
+    text-align: center;
+    padding: 3px;
+    background-color: #1E1E1E !important;
+    color: white;
+    margin-top: 50px;
+  }
