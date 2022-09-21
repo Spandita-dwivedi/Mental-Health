@@ -25,6 +25,10 @@ app.get("/" ,function(req,res){
     res.render('homePage');
 });
 
+app.get("/homePage" ,function(req,res){
+  res.render('homePage');
+});
+
 app.get("/about" ,function(req,res){
     res.render('about');
 });
